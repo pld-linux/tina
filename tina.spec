@@ -2,6 +2,7 @@
 # TODO: there's a version for sparc, too - but I'm not sure if it not only works on Solaris
 
 Summary:	tina - TIme petri Net Analyzer
+Summary(pl):	TIme petri Net Analyzer - analizator sieci Petriego
 Name:		tina
 Version:	2.8.0
 Release:	0.beta.1
@@ -16,12 +17,12 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %define         no_install_post_strip   1
 
 %description
-Tina is a toolbox for the edition and analysis of Petri Nets and Time Petri
-Nets, developed in the OLC group of LAAS/CNRS.
+Tina is a toolbox for the edition and analysis of Petri Nets and Time
+Petri Nets, developed in the OLC group of LAAS/CNRS.
 
 %description -l pl
-Tina to zestaw narzêdzi do edycji oraz analizy sieci Petriego i czasowych
-sieci Petriego, rozwijany przez grupê OLC w LAAS/CNRS.
+Tina to zestaw narzêdzi do edycji oraz analizy sieci Petriego i
+czasowych sieci Petriego, rozwijany przez grupê OLC w LAAS/CNRS.
 
 %prep
 %setup -q
@@ -30,7 +31,7 @@ sieci Petriego, rozwijany przez grupê OLC w LAAS/CNRS.
 rm -rf $RPM_BUILD_ROOT
 install -d $RPM_BUILD_ROOT{%{_bindir},%{_datadir}/%{name},%{_mandir}/mann}
 cp -rf bin/* $RPM_BUILD_ROOT%{_bindir}
-mv -f $RPM_BUILD_ROOT%{_bindir}/plugins $RPM_BUILD_ROOT/%{_datadir}/%{name}
+mv -f $RPM_BUILD_ROOT%{_bindir}/plugins $RPM_BUILD_ROOT%{_datadir}/%{name}
 cp -Rf extras nets $RPM_BUILD_ROOT%{_datadir}/%{name}
 install doc/man/mann/* $RPM_BUILD_ROOT%{_mandir}/mann
 
