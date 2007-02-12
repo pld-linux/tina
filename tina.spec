@@ -2,7 +2,7 @@
 # TODO: there's a version for sparc, too - but I'm not sure if it not only works on Solaris
 
 Summary:	tina - TIme petri Net Analyzer
-Summary(pl):	TIme petri Net Analyzer - analizator sieci Petriego
+Summary(pl.UTF-8):   TIme petri Net Analyzer - analizator sieci Petriego
 Name:		tina
 Version:	2.8.0
 Release:	0.beta.2
@@ -21,9 +21,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 Tina is a toolbox for the edition and analysis of Petri Nets and Time
 Petri Nets, developed in the OLC group of LAAS/CNRS.
 
-%description -l pl
-Tina to zestaw narzêdzi do edycji oraz analizy sieci Petriego i
-czasowych sieci Petriego, rozwijany przez grupê OLC w LAAS/CNRS.
+%description -l pl.UTF-8
+Tina to zestaw narzÄ™dzi do edycji oraz analizy sieci Petriego i
+czasowych sieci Petriego, rozwijany przez grupÄ™ OLC w LAAS/CNRS.
 
 %prep
 %setup -q
