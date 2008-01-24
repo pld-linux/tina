@@ -15,8 +15,6 @@ Requires:	graphviz
 ExclusiveArch:	%{ix86}
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
-%define         no_install_post_strip   1
-
 %description
 Tina is a toolbox for the edition and analysis of Petri Nets and Time
 Petri Nets, developed in the OLC group of LAAS/CNRS.
